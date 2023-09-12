@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.masthead {
+  height: 85vh;
+  min-height: 500px;
+  background-image: url("./Images/bleu.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 18vh;
+}
+
+.masthead img {
+  width: 20%;
+}
+
+.navbar-nav a {
+  font-size: 30px;
+  color: white;
+}
+
+.navbar-nav button {
+  padding: 8px;
+  border: none;
+  border-top-right-radius: 30px;
+  color: white;
+  background-color: rgba(9, 106, 9, 1);
+}
+
+.flotant {
+  position: relative;
+  width: 55%;
+  height: 30vh;
+  top: 30vh;
+  margin: auto;
+  background-color: rgba(0, 92, 150, 0.69);
+}
+
+.flotant h1 {
+  color: #65ff65;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.flotant p {
+  color: white;
+  font-size: 2.3rem;
+  padding: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flotant span {
+  color: white;
+}
