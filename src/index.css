@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-section {
-}
+
 
 section .section-title {
   text-align: center;
@@ -67,12 +65,3 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
   font-weight: 700;
 }
-
-/* @media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
-} */

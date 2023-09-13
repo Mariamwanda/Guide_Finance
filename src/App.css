@@ -115,8 +115,32 @@
   color: white;
   font-weight: bold;
 }
-#Aproo {
+#Apropos {
   overflow: hidden;
+}
+h2 {
+  text-align: center;
+  margin: 20px;
+  color: #005c96;
+}
+
+#Apropos .fonction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px;
+  border: 2px solid red;
+  height: 30vh;
+}
+
+.fonction .grid {
+  border: 2px solid aqua;
+  width: 80%;
+  height: 25vh;
+}
+
+.grid img {
+  width: 100%;
+  height: 20vh;
 }
 
 .text-fluid button {
@@ -128,6 +152,10 @@
   position: relative;
   left: 13vw;
   top: 20px;
+}
+
+.partenaire {
+  margin-top: 20px;
 }
 
 .partenaire .imgPart {
@@ -186,7 +214,7 @@
   height: 50px;
   text-transform: capitalize;
   margin-top: 3px;
-  background: #b636ff;
+  background: red;
   border: 1px solid #b636ff;
   cursor: pointer;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -268,5 +296,122 @@
   }
   100% {
     bottom: 7px;
+  }
+}
+
+.block {
+  color: rgba(155, 224, 201, 0.539);
+  border: 2px solid rgba(0, 64, 128, 0.395);
+  height: 40vh;
+  margin-bottom: 7vh;
+  margin-left: 20px;
+  box-shadow: 5px 5px 5px 5px #005c9639;
+}
+
+.blocks {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.block i {
+  border: none;
+  border-radius: 20px / 50px;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 17px;
+  float: right;
+  background-color: rgba(155, 224, 201, 0.539);
+}
+
+.grid-col h1,
+p {
+  color: #005c96;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.block a {
+  color: #323232;
+}
+
+.block img {
+  width: 100%;
+  height: 24vh;
+  border-bottom-left-radius: 30%;
+}
+
+@media (min-width: 768px) {
+  .blocks {
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+  }
+}
+
+.cards {
+  background-color: #d9d9d9c0;
+  padding: 20px;
+}
+
+.card {
+  color: rgba(155, 224, 201, 0.539);
+}
+
+.card p {
+  color: rgba(155, 224, 201, 0.539);
+}
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: grid;
+  gap: 1rem;
+}
+
+.social .fa-solid {
+  border: none;
+  border-radius: 20px / 50px;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 20px;
+  float: right;
+  color: grey;
+}
+
+.grid-col h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.grid-col span {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.block a {
+  color: #323232;
+}
+
+.card img {
+  width: 25%;
+  height: 8vh;
+  margin: 30px;
+  border-radius: 100%;
+}
+
+@media (min-width: 768px) {
+  .blocks {
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
   }
 }

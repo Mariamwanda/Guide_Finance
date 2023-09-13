@@ -1,3 +1,5 @@
+import './script.js'
+
 import Footer from "../Components/footer";
 
 function Accueil() {
@@ -5,7 +7,7 @@ function Accueil() {
     <>
       <header class="masthead">
         <nav class="navbar navbar-expand-lg navbar-light  shadow">
-          <div class="container">
+          <div class="container navbare">
             <a class="navbar-brand" href="#">
               <img src="./../../src/Images/logo.png" alt="" />
             </a>
@@ -64,7 +66,7 @@ function Accueil() {
         </div>
       </header>
       <div id="Apropos">
-        <div className="container bar-progess">
+        <div className="container-fluid  bar-progess">
           <div className="container">
             <p>A PROPOS DE NOUS...</p>
           </div>
@@ -96,6 +98,50 @@ function Accueil() {
             </div>
           </div>
         </section>
+        <h2>Fonctionnement</h2>
+        <div class="blocks">
+          <div class="block">
+            <div class="grid-col">
+              <img src="./../../src/Images/finance2.jpeg" alt="" />
+              <h1>
+                <span>Soutient</span>
+                <br />
+              </h1>
+              <p>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci maiores ipsum, error explicabo beatae cupiditate
+                delectus incidunt quisquam. Quod pariatur reiciendis ullam
+              </p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="grid-col">
+              <img src="./../../src/Images/fiance.jpeg" alt="" />
+              <h1>
+                <span>Accompagnement</span> <br />
+              </h1>
+              <p>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci maiores ipsum, error explicabo beatae cupiditate
+                delectus incidunt quisquam. Quod pariatur reiciendis ullam
+              </p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="grid-col">
+              <img src="./../../src/Images/finances1.webp" alt="" />
+              <h1>Motivation</h1>
+              <p>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci maiores ipsum, error explicabo beatae cupiditate
+                delectus incidunt quisquam. Quod pariatur reiciendis ullam
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <section className="container partenaire">
         <div className="container progessPater">
@@ -104,11 +150,11 @@ function Accueil() {
         <div className="imgPart">
           <div>
             <img src="./../../src/Images/unif.png" alt="" />
-            <p>dddede</p>
+            <p>UNICEF</p>
           </div>
           <div>
-            <img src="./../../src/Images/unif.png" alt="" />
-            <p>dddede</p>
+            <img src="./../../src/Images/atlaOK.png" alt="" />
+            <p>ATLANTA</p>
           </div>
           <div>
             <img src="./../../src/Images/unif.png" alt="" />
@@ -120,126 +166,338 @@ function Accueil() {
           </div>
         </div>
       </section>
-      <section id="container contact" class="contact">
-        <div class="section-heading text-center">
-          <h2>Contactez Nous</h2>
+      <div
+        id="carouselExampleCaptions"
+        class="container carousel slide"
+        data-bs-ride="carousel"
+      >
+        <h2>Nos Avis..</h2>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <div class="container">
-          <div class="container contact-content">
-            <div class="container row">
-              <div class="container col-md-offset-1 col-md-5 col-sm-6">
-                <div class="container single-contact-box">
-                  <div class="contact-form">
-                    <form>
-                      <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="name"
-                              placeholder="Name*"
-                              name="name"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="email"
-                              placeholder="Email*"
-                              name="email"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="subject"
-                              placeholder="Subject"
-                              name="subject"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="form-group">
-                            <textarea
-                              class="form-control"
-                              rows="8"
-                              id="comment"
-                              placeholder="Message"
-                            ></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="single-contact-btn">
-                            <a class="contact-btn" href="#" role="button">
-                              Envoyer
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards">
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-offset-1 col-md-5 col-sm-6">
-                <div class="single-contact-box">
-                  <div class="contact-adress">
-                    <div class="contact-add-head">
-                      <h3>G_Finance</h3>
-                      <p>Guide Finance</p>
-                    </div>
-                    <div class="contact-add-info">
-                      <div class="single-contact-add-info">
-                        <h3>Téléphone</h3>
-                        <p>0575530518</p>
-                      </div>
-                      <div class="single-contact-add-info">
-                        <h3>email</h3>
-                        <p>mariamwandaogo7@gmail.com</p>
-                      </div>
-                      <div class="single-contact-add-info">
-                        <h3>Ville</h3>
-                        <p>Abidjan</p>
-                      </div>
-                    </div>
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
                   </div>
-                  <div class="hm-foot-icon">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-whatsapp"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-telegram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-google"></i>
-                        </a>
-                      </li>
-                    </ul>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="cards">
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="cards">
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-col">
+                  <h1>
+                    <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
+                    <span>Mr.Belem</span>
+                    <br />
+                  </h1>
+
+                  <p>
+                    {" "}
+                    Tenetur, incidunt quidem. Tenetur, incidunt quidem. Tenetur,
+                    incidunt quidem. Tenetur, incidunt quidem. Tenetur, incidunt
+                    quidem.
+                  </p>
+                  <div className="social">
+                    <a href="">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
       <Footer />
     </>
   );
