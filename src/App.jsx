@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Accueil/>} />
+          <Route path="/Footer" element={<Footer/>} />
         </Routes>
       </BrowserRouter>
     </>

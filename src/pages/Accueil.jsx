@@ -1,55 +1,14 @@
-import './script.js'
+import "./script.js";
+import Navbar from "./Navbar.jsx";
 
 import Footer from "../Components/footer";
 
 function Accueil() {
   return (
     <>
-      <header class="masthead">
-        <nav class="navbar navbar-expand-lg navbar-light  shadow">
-          <div class="container navbare">
-            <a class="navbar-brand" href="#">
-              <img src="./../../src/Images/logo.png" alt="" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class=" navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">
-                    Accueil
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Apropos">
-                    Apropos
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    Contact
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <button>Connexion</button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <div class="container h-100">
+      <Navbar />
+      <div className="banniere">
+        <div class="container">
           <div class="row h-100 align-items-center">
             <div class="flotant">
               <h1 class="fw-light">
@@ -64,38 +23,40 @@ function Accueil() {
             </div>
           </div>
         </div>
-      </header>
+      </div>
+
       <div id="Apropos">
         <div className="container-fluid  bar-progess">
           <div className="container">
             <p>A PROPOS DE NOUS...</p>
           </div>
         </div>
+
         <section class="py-5 apropos">
-          <div class="container">
-            <div className="img-fluid">
-              <img src="./../../src/Images/apropos.webp" alt="" />
-            </div>
-            <div className="text-fluid">
-              <h1>Tout sur Nous</h1>
-              <p>
-                Le lorem ipsum est, en imprimerie, une suite de mots sans <br />
-                signification utilisée à titre provisoire pour calibrer une mise
-                <br />
-                en page, le texte définitif ve nant remplacer le faux-texte dès{" "}
-                <br />
-                qu'il est prêt ou que la mise en page est ach evée.
-              </p>
-              <p>
-                Le lorem ipsum est, en imprimerie, une suite de mots sans <br />
-                signification utilisée à titre provisoire pour calibrer une mise
-                <br />
-                en page, le texte définitif ve nant remplacer le faux-texte dès{" "}
-                <br />
-                qu'il est prêt ou que la mise en page est ach evée.
-              </p>
+          <div className="img-fluid">
+            <img src="./../../src/Images/apropos.webp" alt="" />
+          </div>
+          <div className="text-fluid">
+            <h1>Tout sur Nous</h1>
+            <p>
+              Le lorem ipsum est, en imprimerie, une suite de mots sans <br />
+              signification utilisée à titre provisoire pour calibrer une mise
+              <br />
+              en page, le texte définitif ve nant remplacer le faux-texte dès{" "}
+              <br />
+              qu'il est prêt ou que la mise en page est ach evée.
+            </p>
+            <p>
+              Le lorem ipsum est, en imprimerie, une suite de mots sans <br />
+              signification utilisée à titre provisoire pour calibrer une mise
+              <br />
+              en page, le texte définitif ve nant remplacer le faux-texte dès{" "}
+              <br />
+              qu'il est prêt ou que la mise en page est ach evée.
+            </p>
+            <p>
               <button>En Savoir plus...</button>
-            </div>
+            </p>
           </div>
         </section>
         <h2>Fonctionnement</h2>
@@ -111,7 +72,6 @@ function Accueil() {
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci maiores ipsum, error explicabo beatae cupiditate
-                delectus incidunt quisquam. Quod pariatur reiciendis ullam
               </p>
             </div>
           </div>
@@ -125,7 +85,6 @@ function Accueil() {
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci maiores ipsum, error explicabo beatae cupiditate
-                delectus incidunt quisquam. Quod pariatur reiciendis ullam
               </p>
             </div>
           </div>
@@ -137,12 +96,34 @@ function Accueil() {
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci maiores ipsum, error explicabo beatae cupiditate
-                delectus incidunt quisquam. Quod pariatur reiciendis ullam
+              </p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="grid-col">
+              <img src="./../../src/Images/finances1.webp" alt="" />
+              <h1>Motivation</h1>
+              <p>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci maiores ipsum, error explicabo beatae cupiditate
+              </p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="grid-col">
+              <img src="./../../src/Images/finances1.webp" alt="" />
+              <h1>Motivation</h1>
+              <p>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci maiores ipsum, error explicabo beatae cupiditate
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <section className="container partenaire">
         <div className="container progessPater">
           <p>PARTENAIRES</p>
@@ -231,7 +212,7 @@ function Accueil() {
                 <div class="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
-                    <span>Mr.Belem</span>
+                    <span>Mme.Noelle</span>
                     <br />
                   </h1>
 
@@ -261,7 +242,7 @@ function Accueil() {
                 <div class="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
-                    <span>Mr.Belem</span>
+                    <span>Mr.Konan</span>
                     <br />
                   </h1>
 
@@ -325,7 +306,7 @@ function Accueil() {
                 <div class="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
-                    <span>Mr.Belem</span>
+                    <span>Mme.Noelle</span>
                     <br />
                   </h1>
 
@@ -355,7 +336,7 @@ function Accueil() {
                 <div class="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
-                    <span>Mr.Belem</span>
+                    <span>Mr.Konan</span>
                     <br />
                   </h1>
 
@@ -419,7 +400,7 @@ function Accueil() {
                 <div class="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
-                    <span>Mr.Belem</span>
+                    <span>Mme.Noelle</span>
                     <br />
                   </h1>
 
@@ -449,7 +430,7 @@ function Accueil() {
                 <div class="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
-                    <span>Mr.Belem</span>
+                    <span>Mr.Konan</span>
                     <br />
                   </h1>
 

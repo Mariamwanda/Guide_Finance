@@ -1,11 +1,9 @@
-function scrollValue() {
-    var navbar = document.getElementById('navbar');
-    var scroll = window.scrollY;
-    if (scroll < 200) {
-        navbar.classList.remove('BgColour');
-    } else {
-        navbar.classList.add('BgColour');
-    }
-}
+const headerEl = document.querySelector('header');
 
-window.addEventListener('scroll', scrollValue);
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 140) {
+    headerEl.classList.add("header-scrolled");
+  } else if (window.scrollY <= 50) {
+    headerEl.classList.remove("header-scrolled");
+  }
+});

@@ -16,27 +16,27 @@ function Footer() {
                     <a href="/#">Accompagnement</a>
                   </li>
                   <li>
-                    <a href="/#">Quarantie</a>
+                    <a href="/#">Assurance</a>
                   </li>
                   <li>
-                    <a href="/#">impeccable</a>
+                    <a href="/#">Quarantie</a>
                   </li>
                 </ul>
               </div>
               <div className="col-sm-6 col-md-3 item">
-                <h3>Objectifs</h3>
+                <h3>Services</h3>
                 <ul>
                   <li>
-                    <a href="/#">Services</a>
+                    <a href="/#">Accueil</a>
                   </li>
                   <li>
-                    <a href="/#">Accompagnement</a>
+                    <a href="/#">Apropos</a>
                   </li>
                   <li>
-                    <a href="">Quarantie</a>
+                    <a href="">Contact</a>
                   </li>
                   <li>
-                    <a href="/#">impeccable</a>
+                    <a href="/#">Connexion</a>
                   </li>
                 </ul>
               </div>
