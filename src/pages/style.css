@@ -18,11 +18,16 @@ footer .item a {
 
 footer i {
   border: 2px solid #65ff65;
-  padding: 10px;
+  padding: 9px;
   color: white;
   font-size: 1.8rem;
   border-radius: 100%;
   width: 100%;
+  transition: 0.5s;
+}
+
+footer .facebook {
+  padding: 4px;
 }
 
 footer input {

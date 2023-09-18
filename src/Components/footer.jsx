@@ -57,7 +57,7 @@ function Footer() {
                 <ul class="list-unstyled list-inline social text-center">
                   <li class="list-inline-item"></li>
                   <li class="list-inline-item">
-                    <a href="" target="_blank">
+                    <a href="" target="_blank" className="facebook">
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
@@ -73,7 +73,7 @@ function Footer() {
                   </li>
                   <li class="list-inline-item">
                     <a href="" target="_blank">
-                    <i class="fa-brands fa-google"></i>
+                      <i class="fa-brands fa-google"></i>
                     </a>
                   </li>
                 </ul>

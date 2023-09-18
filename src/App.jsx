@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Accueil from "./pages/Accueil";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./App.css";
 
 function App() {
