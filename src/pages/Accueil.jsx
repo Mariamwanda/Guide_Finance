@@ -2,6 +2,7 @@ import "./script.js";
 import Navbar from "./Navbar.jsx";
 
 import Footer from "../Components/footer";
+import Connexion from "./connexion.jsx";
 
 function Accueil() {
   return (
@@ -557,6 +558,7 @@ function Accueil() {
           </div>
         </section>
       </div>
+      <Connexion/>
 
       <Footer />
     </>

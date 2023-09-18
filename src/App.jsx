@@ -6,7 +6,11 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Enregistrement from "./pages/enregistrement";
 import "./App.css";
+import './pages/script.js'
+import Connexion from "./pages/connexion";
+
 
 function App() {
   return (
@@ -15,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Accueil/>} />
           <Route path="/Footer" element={<Footer/>} />
+          <Route path="/Enregistrement" element={<Enregistrement/>} />
+          <Route path="/Connexion" element={<Connexion/>} />
         </Routes>
       </BrowserRouter>
     </>
