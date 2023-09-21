@@ -48,37 +48,37 @@ function Footer() {
                 <br />
                 <div className="col d-flex">
                   <input type="text" placeholder="ecrit..." />{" "}
-                  <button classNameName="btn-outline">Envoyer</button>
+                  <button className="btn-outline">Envoyer</button>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                <ul class="list-unstyled list-inline social text-center">
-                  <li class="list-inline-item"></li>
-                  <li class="list-inline-item">
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul className="list-unstyled list-inline social text-center">
+                  <li className="list-inline-item"></li>
+                  <li className="list-inline-item">
                     <a href="" target="_blank" className="facebook">
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a href="" target="_blank">
-                      <i class="fa-brands fa-facebook-messenger"></i>
+                      <i className="fa-brands fa-facebook-messenger"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a href="" target="_blank">
-                      <i class="fa-brands fa-whatsapp"></i>
+                      <i className="fa-brands fa-whatsapp"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a href="" target="_blank">
-                      <i class="fa-brands fa-google"></i>
+                      <i className="fa-brands fa-google"></i>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="footer">
+              <div className="footer">
                 <p style={{ color: "white" }}>
                   &copy; 2023 MariamWandaogo.{" "}
                   <span style={{ color: "#65ff65" }}>G_Finance</span>

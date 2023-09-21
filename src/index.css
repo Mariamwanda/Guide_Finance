@@ -64,24 +64,44 @@ section .section-title {
   font-weight: 700;
 }
 
-/* Connexion */
-
-.cadre {
-  width: 50%;
-  border: 1px solid rgba(128, 128, 128, 0.582);
-  height: 65vh;
-  padding: 0;
-  margin-top: 12vh;
+/* enregistrement */
+.wrapper {
+  max-width: 650px;
+  min-height: 500px;
+  margin: 80px auto;
+  padding: 40px 30px 30px 30px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid grey;
 }
 
-.Bleu {
+.content {
+  width: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.582);
+  height: 85vh;
+  padding: 0;
+  margin-top: 3vh;
+}
+
+.contentFirst {
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   padding: 20px;
   background-color: #005c96;
 }
+.wrapper .form-field input,
+select {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
 
-.Bleu form {
+  background: none;
+  font-size: 1.2rem;
+  padding: 10px 15px 10px 10px;
+}
+
+.contentFirst form {
   width: 70%;
   height: 45vh;
   background-color: white;
@@ -89,30 +109,24 @@ section .section-title {
   margin-left: 7vw;
   margin-top: 10vh;
   border-radius: 5px;
+  overflow: hidden;
 }
 form h1 {
   color: #096a09;
   margin-top: 20px;
 }
 
-form input {
-  margin-bottom: 25px;
-  padding: 20px;
-  border: 2px solid red;
-  height: 45px;
-}
-
-form button {
-  margin-top: 2vh;
-  padding: 10px;
-  font-size: 20px;
-  float: left;
+.contentFirst .btn {
+  box-shadow: none;
+  width: 50%;
+  height: 50px;
+  border: 2px solid #005c96;
   color: #096a09;
-  margin-left: 83%;
-  background-color: white;
-  border: 1px solid #096a09;
-  border-top-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+  letter-spacing: 1.3px;
+  font-size: 1.3rem;
+  margin-left: 7vw;
 }
 
 .class {
@@ -134,12 +148,6 @@ fieldset input {
 .class h1 {
   position: relative;
   right: 4vw;
-}
-
-
-
-body {
-  font-family: Arial, sans-serif;
 }
 
 .popup {
@@ -169,4 +177,59 @@ body {
   right: 10px;
   font-size: 24px;
   cursor: pointer;
+}
+
+.theme h1 {
+  margin: 30px;
+}
+
+.Box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.Box .Boxcard {
+  position: relative;
+  background: #005c9670;
+  padding: 10px;
+  margin-left: 30px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.Box .Boxcard h3 {
+  margin: 20px;
+}
+
+.Boxcard img {
+  width: 100%;
+  height: 30vh;
+}
+
+/*popup*/
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
 }

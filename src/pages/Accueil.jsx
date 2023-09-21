@@ -2,21 +2,20 @@ import "./script.js";
 import Navbar from "./Navbar.jsx";
 
 import Footer from "../Components/footer";
-import Connexion from "./connexion.jsx";
 
 function Accueil() {
   return (
     <>
       <Navbar />
       <div className="banniere">
-        <div class="container">
-          <div class="row h-100 align-items-center">
-            <div class="flotant">
-              <h1 class="fw-light">
+        <div className="container">
+          <div className="row h-100 align-items-center">
+            <div className="flotant">
+              <h1 className="fw-light">
                 <span>G</span>_<span>F</span>inance,
               </h1>
 
-              <p class="lead">
+              <p className="lead">
                 vous accompage <br />
                 pour tout votre <br />
                 existence.
@@ -25,15 +24,13 @@ function Accueil() {
           </div>
         </div>
       </div>
-
       <div id="Apropos">
         <div className="container-fluid  bar-progess">
           <div className="container">
             <p>A PROPOS DE NOUS...</p>
           </div>
         </div>
-
-        <section class="py-5 apropos">
+        <section className="py-5 apropos">
           <div className="img-fluid">
             <img src="./../../src/Images/apropos.webp" alt="" />
           </div>
@@ -59,9 +56,9 @@ function Accueil() {
           </div>
         </section>
         <h2>Fonctionnement</h2>
-        <div class="blocks">
-          <div class="block">
-            <div class="grid-col">
+        <div className="blocks">
+          <div className="block">
+            <div className="grid-col">
               <img src="./../../src/Images/finance2.jpeg" alt="" />
               <h1>
                 <span>Soutient</span>
@@ -70,12 +67,12 @@ function Accueil() {
               <p>
                 {" "}
                 La finance est l'art de faire passer l'argent de mains en mains
-              jusqu'à ce qu'il ait disparu.
+                jusqu'à ce qu'il ait disparu.
               </p>
             </div>
           </div>
-          <div class="block">
-            <div class="grid-col">
+          <div className="block">
+            <div className="grid-col">
               <img src="./../../src/Images/fiance.jpeg" alt="" />
               <h1>
                 <span>Accompagnement</span> <br />
@@ -83,40 +80,40 @@ function Accueil() {
               <p>
                 {" "}
                 La finance est l'art de faire passer l'argent de mains en mains
-              jusqu'à ce qu'il ait disparu.
+                jusqu'à ce qu'il ait disparu.
               </p>
             </div>
           </div>
-          <div class="block">
-            <div class="grid-col">
+          <div className="block">
+            <div className="grid-col">
               <img src="./../../src/Images/finances1.webp" alt="" />
               <h1>Motivation</h1>
               <p>
                 {" "}
                 La finance est l'art de faire passer l'argent de mains en mains
-              jusqu'à ce qu'il ait disparu.
+                jusqu'à ce qu'il ait disparu.
               </p>
             </div>
           </div>
-          <div class="block">
-            <div class="grid-col">
+          <div className="block">
+            <div className="grid-col">
               <img src="./../../src/Images/img2.jpeg" alt="" />
               <h1>Financement</h1>
               <p>
                 {" "}
                 La finance est l'art de faire passer l'argent de mains en mains
-              jusqu'à ce qu'il ait disparu.
+                jusqu'à ce qu'il ait disparu.
               </p>
             </div>
           </div>
-          <div class="block">
-            <div class="grid-col">
+          <div className="block">
+            <div className="grid-col">
               <img src="./../../src/Images/img1.jpeg" alt="" />
               <h1>Conseil</h1>
               <p>
                 {" "}
                 La finance est l'art de faire passer l'argent de mains en mains
-              jusqu'à ce qu'il ait disparu.
+                jusqu'à ce qu'il ait disparu.
               </p>
             </div>
           </div>
@@ -148,16 +145,16 @@ function Accueil() {
       </section>
       <div
         id="carouselExampleCaptions"
-        class="container carousel slide"
+        className="container carousel slide"
         data-bs-ride="carousel"
       >
         <h2>Nos Avis..</h2>
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -174,11 +171,11 @@ function Accueil() {
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="cards">
-              <div class="card">
-                <div class="grid-col">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <div className="cards">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
                     <span>Mr.Belem</span>
@@ -187,27 +184,27 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    « Promouvoir une Afrique climato-intelligente,
-                    résiliente, inclusive, et intégrée »
+                    « Promouvoir une Afrique climato-intelligente, résiliente,
+                    inclusive, et intégrée »
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="grid-col">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
                     <span>Mme.Noelle</span>
@@ -216,27 +213,27 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    Notre rencontre annuelle intervient dans un contexte marqué par
-                    l’expansion de l’économie mondiale.
+                    Notre rencontre annuelle intervient dans un contexte marqué
+                    par l’expansion de l’économie mondiale.
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="grid-col">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
                     <span>Mr.Konan</span>
@@ -245,31 +242,32 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    Ces réalisations et la côte de confiance dont jouit notre Banque auprès
-                    des institutions de financement du développement.
+                    Ces réalisations et la côte de confiance dont jouit notre
+                    Banque auprès des institutions de financement du
+                    développement.
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
-            <div class="cards">
-              <div class="card">
-                <div class="grid-col">
+          <div className="carousel-item active">
+            <div className="cards">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
                     <span>Mr.Belem</span>
@@ -278,27 +276,27 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    « Promouvoir une Afrique climato-intelligente,
-                    résiliente, inclusive, et intégrée »
+                    « Promouvoir une Afrique climato-intelligente, résiliente,
+                    inclusive, et intégrée »
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="grid-col">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
                     <span>Mme.Noelle</span>
@@ -307,27 +305,27 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    Notre rencontre annuelle intervient dans un contexte marqué par
-                    l’expansion de l’économie mondiale.
+                    Notre rencontre annuelle intervient dans un contexte marqué
+                    par l’expansion de l’économie mondiale.
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="grid-col">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
                     <span>Mr.Konan</span>
@@ -336,31 +334,32 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    Ces réalisations et la côte de confiance dont jouit notre Banque auprès
-                    des institutions de financement du développement.
+                    Ces réalisations et la côte de confiance dont jouit notre
+                    Banque auprès des institutions de financement du
+                    développement.
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
-            <div class="cards">
-              <div class="card">
-                <div class="grid-col">
+          <div className="carousel-item active">
+            <div className="cards">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
                     <span>Mr.Belem</span>
@@ -369,27 +368,27 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    « Promouvoir une Afrique climato-intelligente,
-                    résiliente, inclusive, et intégrée »
+                    « Promouvoir une Afrique climato-intelligente, résiliente,
+                    inclusive, et intégrée »
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="grid-col">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
                     <span>Mme.Noelle</span>
@@ -398,27 +397,27 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    Notre rencontre annuelle intervient dans un contexte marqué par
-                    l’expansion de l’économie mondiale.
+                    Notre rencontre annuelle intervient dans un contexte marqué
+                    par l’expansion de l’économie mondiale.
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="grid-col">
+              <div className="card">
+                <div className="grid-col">
                   <h1>
                     <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
                     <span>Mr.Konan</span>
@@ -427,21 +426,22 @@ function Accueil() {
 
                   <p>
                     {" "}
-                    Ces réalisations et la côte de confiance dont jouit notre Banque auprès
-                    des institutions de financement du développement.
+                    Ces réalisations et la côte de confiance dont jouit notre
+                    Banque auprès des institutions de financement du
+                    développement.
                   </p>
                   <div className="social">
                     <a href="">
-                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i className="fa-solid fa-star-half-stroke"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                     <a href="">
-                      <i class="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </a>
                   </div>
                 </div>
@@ -450,107 +450,108 @@ function Accueil() {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Precédent</span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Precédent</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Suivant</span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Suivant</span>
         </button>
       </div>
-      <div class="contact container">
+      <div className="contact container">
         <section id="joindre">
-          <h2 class="h1-responsive font-weight-bold text-center my-4">
+          <h2 className="h1-responsive font-weight-bold text-center my-4">
             Contactez-Nous.
           </h2>
-          <div class="row">
-            <div class="col-md-9 mb-md-0 mb-5">
+          <div className="row">
+            <div className="col-md-9 mb-md-0 mb-5">
               <form
                 id="contact-form"
                 name="contact-form"
                 action="mail.php"
                 method="POST"
               >
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form mb-0">
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="md-form mb-0">
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        class="form-control"
+                        className="form-control"
                       />
-                      <label for="subject" class="">
+                      <label htmlFor="subject" className="">
                         Email
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form mb-0">
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="md-form mb-0">
                       <input
                         type="text"
                         id="subject"
                         name="subject"
-                        class="form-control"
+                        className="form-control"
                       />
-                      <label for="subject" class="">
+                      <label htmlFor="subject" className="">
                         Object
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form">
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="md-form">
                       <textarea
                         type="text"
                         id="message"
                         name="message"
                         rows="2"
-                        class="form-control md-textarea"
+                        className="form-control md-textarea"
                       ></textarea>
-                      <label for="message">Votre message</label>
+                      <label htmlFor="message">Votre message</label>
                     </div>
                   </div>
                 </div>
               </form>
-              <div class="text-center text-md-left">
-                <a
-                  class="btn"
-                  onclick="document.getElementById('contact-form').submit();"
-                >
-                  Envoyer
-                </a>
+              <div className="text-center text-md-left">
+                <a className="btn">Envoyer</a>
               </div>
-              <div class="status"></div>
+              <div className="status"></div>
             </div>
 
-            <div class="col-md-3 text-center">
-              <ul class="list-unstyled mb-0">
+            <div className="col-md-3 text-center">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                  <i className="fas fa-map-marker-alt fa-2x"></i>
                   <p>Abidjan,Cote d'Ivoire</p>
                 </li>
 
                 <li>
-                  <i class="fas fa-phone mt-4 fa-2x"></i>
+                  <i className="fas fa-phone mt-4 fa-2x"></i>
                   <p>05 75530518</p>
                 </li>
 
                 <li>
-                  <i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <i className="fas fa-envelope mt-4 fa-2x"></i>
                   <p>mariamwandaogo7@gmail.com</p>
                 </li>
               </ul>
@@ -558,8 +559,6 @@ function Accueil() {
           </div>
         </section>
       </div>
-      <Connexion/>
-
       <Footer />
     </>
   );
