@@ -1,18 +1,26 @@
-import Chart from '../components/Chart';
-import FeaturedInfo from '../components/FeaturedInfo'
-import '../css/page/home.css'
-import { userData } from "../dummyData";
-import WidgetSm from '../components/WidgetSm';
-import WidgetLg from '../components/WidgetLg';
+import Chart from "../components/Chart.jsx";
+import FeaturedInfo from "../components/FeaturedInfo.jsx";
+import "./home.css";
+import { userData } from "../dummyData.js";
+import WidgetSm from "../Components/WidgetLg.jsx";
+import WidgetLg from "../Components/WidgetLg.jsx";
+import Sidebar from "../Components/Sidebar.jsx";
 
 function Home() {
   return (
+ 
     <div className="home">
+         <Sidebar/>
       <FeaturedInfo />
-      <Chart data={userData} title="User Analytics" grid dataKey="Active User"/>
+      <Chart
+        data={userData}
+        title="User Analytics"
+        grid
+        dataKey="Active User"
+      />
       <div className="homeWidgets">
-        <WidgetSm/>
-        <WidgetLg/>
+        <WidgetSm />
+        <WidgetLg />
       </div>
     </div>
   );

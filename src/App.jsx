@@ -1,53 +1,56 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import Footer from "./Components/footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Enregistrement from "./pages/enregistrement";
 import "./App.css";
-import './pages/script.js'
+import "./pages/script.js";
 import Connexion from "./pages/connexion";
 import DashAdmin from "./pages/DashAdmin.jsx";
 import Home from "./pages/Home.jsx";
-import Users from "./pages/Users.jsx";
-import Home from "./pages/Home.jsx";
-import Home from "./pages/Home.jsx";
-import Home from "./pages/Home.jsx";
-import Home from "./pages/Home.jsx";
-import productId from "./pages/Product";
+import Product from "./pages/Product.jsx";
+import Sidebar from "./Components/Sidebar.jsx";
+import Topbar from "./components/Topbar.jsx";
+import UserList from "./pages/UserList.jsx";
+import NewUser from "./pages/NewUser.jsx";
+import NewProduct from "./pages/NewProduct.jsx";
+import User from "./pages/User.jsx";
+import ProductList from "./pages/ProductList.jsx";
+
+import { BrowserRouter } from "react-router-dom";
+
+
 
 
 // import EntrepriseDash from "./pages/entrepriseDash";
-
-
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Accueil/>} />
-          <Route path="/Footer" element={<Footer/>} />
-          <Route path="/Enregistrement" element={<Enregistrement/>} />
-          <Route path="/Connexion" element={<Connexion/>} />
-          <Route path="/DashAdmin" element={<DashAdmin/>} />
-          <Route path="/EntrepriseDash" element={<EntrepriseDash/>} />
-
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Users" element={<UserList />} />
-          <Route path="/User/:userId" element={<User />} />
+          <Route path="/" element={<Accueil />} />
           <Route path="/NewUser" element={<NewUser />} />
-          <Route path="/Products" element={<ProductList />} />
-          <Route path="/Product/:productId" element={<Product />} />
+          <Route path="/Sidebar" element={<Sidebar />} />
+          <Route path="/Topbar" element={<Topbar />} />
+          <Route path="/Footer" element={<Footer />} />
+          <Route path="/Enregistrement" element={<Enregistrement />} />
+          <Route path="/Connexion" element={<Connexion />} />
+          <Route path="/DashAdmin" element={<DashAdmin />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/UserList" element={<UserList />} />
+          <Route path="/User" element={<User />} />
+          <Route path="/Product" element={<Product />} />
+          <Route path="/ProductList" element={<ProductList />} />
           <Route path="/Newproduct" element={<NewProduct />} />
-        
         </Routes>
       </BrowserRouter>
     </>
   );
 }
+
 
 export default App;

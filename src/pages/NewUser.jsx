@@ -1,4 +1,4 @@
-import '../css/page/newUser.css'
+import './newUser.css'
 
 
 function NewUser() {

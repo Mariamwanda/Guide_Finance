@@ -1,5 +1,5 @@
-// import "./newProduct.css";
-import '../css/page/newProduct.css'
+import "./newProduct.css";
+
 
 
 function NewProduct() {

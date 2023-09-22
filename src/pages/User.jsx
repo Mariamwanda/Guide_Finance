@@ -7,10 +7,10 @@ import {
     Publish,
   } from "@material-ui/icons";
   import { Link } from "react-router-dom";
-  import '../css/page/user.css'
-
+  import './user.css'
+  // import { styled } from '@mui/system';
   
-  function User() {
+  function User(){
     return (
       <div className="user">
         <div className="userTitleContainer">

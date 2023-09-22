@@ -66,7 +66,7 @@ function Connexion() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 export default Connexion;

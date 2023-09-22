@@ -1,4 +1,4 @@
-import '../css/component/widgetSm.css'
+import './pages/widgetSm.css'
 
 import { Visibility } from "@material-ui/icons";
 

@@ -1,4 +1,5 @@
-import '../css/component/featuredInfo.css'
+import '../pages/featuredInfo.css'
+
 
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 

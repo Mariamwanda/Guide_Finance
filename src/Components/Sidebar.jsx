@@ -1,3 +1,5 @@
+import '../pages/sidebar.css'
+
 import { Link } from "react-router-dom";
 
 function Sidebar() {
@@ -8,13 +10,19 @@ function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-              <li className="sidebarListItem active">Home</li>
+            <li className="sidebarListItem active">
+              <LineStyle className="sidebarIcon" />
+              Home
+            </li>
             </Link>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <Timeline className="sidebarIcon" />
               Analytics
             </li>
-            <li className="sidebarListItem">Sales</li>
+            <li className="sidebarListItem">
+              <TrendingUp className="sidebarIcon" />
+              Sales
+            </li>
           </ul>
         </div>
         <div className="sidebarMenu">
@@ -22,22 +30,22 @@ function Sidebar() {
           <ul className="sidebarList">
             <Link to="/users" className="link">
               <li className="sidebarListItem">
-                <i class="fa-regular fa-user"></i>
+                <PermIdentity className="sidebarIcon" />
                 Users
               </li>
             </Link>
             <Link to="/products" className="link">
               <li className="sidebarListItem">
-                <i class="fa-regular fa-user"></i>
+                <Storefront className="sidebarIcon" />
                 Products
               </li>
             </Link>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <BarChart className="sidebarIcon" />
               Reports
             </li>
           </ul>
@@ -46,15 +54,15 @@ function Sidebar() {
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <MailOutline className="sidebarIcon" />
               Mail
             </li>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <DynamicFeed className="sidebarIcon" />
               Feedback
             </li>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <ChatBubbleOutline className="sidebarIcon" />
               Messages
             </li>
           </ul>
@@ -63,15 +71,15 @@ function Sidebar() {
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <WorkOutline className="sidebarIcon" />
               Manage
             </li>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <Timeline className="sidebarIcon" />
               Analytics
             </li>
             <li className="sidebarListItem">
-              <i class="fa-regular fa-user"></i>
+              <Report className="sidebarIcon" />
               Reports
             </li>
           </ul>
@@ -80,4 +88,5 @@ function Sidebar() {
     </div>
   );
 }
+
 export default Sidebar;

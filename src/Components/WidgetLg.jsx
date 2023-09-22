@@ -1,4 +1,6 @@
-import '../css/component/widgetLg.css'
+import '../pages/widgetLg.css'
+ 
+
 
 
 function WidgetLg() {
