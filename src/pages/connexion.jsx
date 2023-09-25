@@ -58,7 +58,7 @@ function Connexion() {
 
             <div className="text-center fs-6">
               <a href="#">Mot de passe oublié?</a>
-              <Link to="/users" className="link">
+              <Link to="" className="link">
                 <span> Inscription</span>
               </Link>
             </div>
@@ -66,7 +66,7 @@ function Connexion() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default Connexion;

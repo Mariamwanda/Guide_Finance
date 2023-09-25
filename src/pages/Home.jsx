@@ -8,16 +8,16 @@ import Sidebar from "../Components/Sidebar.jsx";
 
 function Home() {
   return (
- 
     <div className="home">
-         <Sidebar/>
-      <FeaturedInfo />
       <Chart
         data={userData}
         title="User Analytics"
         grid
         dataKey="Active User"
       />
+      <Sidebar />
+      <FeaturedInfo />
+
       <div className="homeWidgets">
         <WidgetSm />
         <WidgetLg />

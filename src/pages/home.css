@@ -1,8 +1,11 @@
-.home{
-    flex: 4;
+.home {
+  flex: 4;
+  background-color: rgba(128, 128, 128, 0.525);
+  width: 100%;
+  position: absolute;
 }
 
-.homeWidgets{
-    display: flex;
-    margin: 20px;
+.homeWidgets {
+  display: flex;
+  position: absolute;
 }

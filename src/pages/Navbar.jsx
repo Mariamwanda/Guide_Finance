@@ -1,4 +1,5 @@
 import "../pages/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -37,11 +38,11 @@ function Navbar() {
                     Contact
                   </a>
                 </li>
-                <li className="nav-item">
+                <Link to="/enregistrement">
                   <a className="nav-link" href="#">
                     <button>Connexion</button>
                   </a>
-                </li>
+                </Link>
               </ul>
             </div>
           </div>
@@ -51,4 +52,3 @@ function Navbar() {
   );
 }
 export default Navbar;
-

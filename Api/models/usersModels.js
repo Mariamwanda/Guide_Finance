@@ -18,10 +18,14 @@ const userSchema = new Schema({
         type : String,
         require : true,
     },
+    date : {
+        type : Number,
+    },
     select :{
       type : [String],
       require : true,
     }
+    
     
 },
 {

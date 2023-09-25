@@ -1,4 +1,5 @@
 import "./newProduct.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -26,7 +27,11 @@ function NewProduct() {
             <option value="no">No</option>
           </select>
         </div>
-        <button className="addProductButton">Create</button>
+        <button className="addProductButton">
+          <Link to="/ProductList">
+          Create
+          </Link>
+        </button>
       </form>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Enregistrement() {
   const [data, setData] = useState({
@@ -155,23 +156,12 @@ console.log(formData);
               Inscris
             </button>
             <div className="text-center fs-6">
-              <a href="#">j'ai pas de compte?</a>
+              <Link to="/connexion">j'ai pas de compte?</Link>
               <a href="#">
                 <span>Connexion</span>
               </a>
             </div>
           </div>
-        </div>
-      </div>
-
-      <button id="showPopup">Afficher la popup</button>
-      <div id="popup" className="popup">
-        <div className="popup-content">
-          <span className="close" id="closePopup">
-            &times;
-          </span>
-          <h2>Popup Example</h2>
-          <p>Ceci est un exemple de popup en HTML, CSS et JavaScript.</p>
         </div>
       </div>
     </>

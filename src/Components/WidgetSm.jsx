@@ -1,4 +1,4 @@
-import './pages/widgetSm.css'
+import "../pages/widgetSm.css";
 
 import { Visibility } from "@material-ui/icons";
 
@@ -23,11 +23,7 @@ function WidgetSm() {
           </button>
         </li>
         <li className="widgetSmListItem">
-          <img
-            src="https://pps.whatsapp.net/v/t61.24694-24/145137748_979282972786108_6637272315922901895_n.jpg?ccb=11-4&oh=50b54050bfe01133a2dcd9016d7eb42f&oe=628F8D9A"
-            alt=""
-            className="widgetSmImg"
-          />
+          <img src="" alt="" className="" />
           <div className="widgetSmUser">
             <span className="widgetSmUsername">Saviour Blessing</span>
             <span className="widgetSmUserTitle">Software Engineer</span>
@@ -39,7 +35,7 @@ function WidgetSm() {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://pps.whatsapp.net/v/t61.24694-24/269238626_541674360877610_4124753309886716414_n.jpg?ccb=11-4&oh=01_AVw8uViSkxWY_TmOHuIAkhE8aDAZhMN_snPBsMOx8QkfBQ&oe=6290620E"
+            src=""
             alt=""
             className="widgetSmImg"
           />
@@ -53,11 +49,7 @@ function WidgetSm() {
           </button>
         </li>
         <li className="widgetSmListItem">
-          <img
-            src="https://pps.whatsapp.net/v/t61.24694-24/165334925_636745064442366_2342638920212707989_n.jpg?ccb=11-4&oh=01_AVxRVZwWYlyoOKWVYsM2WPcdzzQSiuERemEGInZeA5mN_Q&oe=628EFF23"
-            alt=""
-            className="widgetSmImg"
-          />
+          <img src="" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUsername">Afforah Pricila</span>
             <span className="widgetSmUserTitle">Software Engineer</span>
@@ -68,11 +60,7 @@ function WidgetSm() {
           </button>
         </li>
         <li className="widgetSmListItem">
-          <img
-            src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="widgetSmImg"
-          />
+          <img src="" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUsername">Anna Keller</span>
             <span className="widgetSmUserTitle">Software Engineer</span>
