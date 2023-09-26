@@ -1,0 +1,74 @@
+/* -------------- TOP CONTAINER -------------- */
+.top-container {
+  border-bottom: 1px solid #3f73a6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 11px 0 11px 24px;
+  max-width: 492px;
+  width: 100%;
+  border: 1px solid #005c96c0;
+  border-radius: 70px;
+  gap: 26px;
+  background: #ffffff;
+  opacity: 0.8;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  width: calc(100% - 78px);
+}
+
+/* -------------- USER NAV -------------- */
+.user-nav,
+.user-info {
+  display: flex;
+  align-items: center;
+  color: #005c96c0;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  margin: 0 37px 0 12px;
+}
+
+.user-image {
+  height: 44px;
+  width: 84px;
+}
+
+/* -------------- NOTIFICATION -------------- */
+.notification {
+  border: 1px solid #005c96c0;
+  background-color: transparent;
+  position: relative;
+  margin-right: 32px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  top: -2px;
+  right: 3px;
+}

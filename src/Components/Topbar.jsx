@@ -1,36 +1,29 @@
-import React from "react";
-import "../pages/topbar.css";
-// import "./topbar.css";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
-
+import "./topbar.css";
 
 function Topbar() {
   return (
-    <div className="topbar">
-      <div className="topbarWrapper">
-        <div className="topLeft">
-          <span className="logo">OpenReplay</span>
-        </div>
-        <div className="topRight">
-          <div className="topbarIconContainer">
-            <NotificationsNone />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Language />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Settings />
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="topAvatar"
+    <>
+      <div class="top-container">
+        <div action="#" class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search something here"
           />
         </div>
+        <div class="user-nav">
+          <button class="notification">
+          <i class="fa-solid fa-bell"></i>
+          </button>
+          <div class="user-info">
+          <i class="fa-solid fa-user-plus"></i>
+            <span class="user-name">Wandaogo</span>
+          </div>
+          <i class="fa-solid fa-check fa-flip-vertical"></i>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

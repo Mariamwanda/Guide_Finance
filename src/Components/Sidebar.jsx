@@ -1,106 +1,53 @@
-import "../pages/sidebar.css";
-import {
-  LineStyle,
-  Timeline,
-  TrendingUp,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  Report,
-  WorkOutline,
-} from "@material-ui/icons";
-
-import { Link } from "react-router-dom";
-
+import './sidebar.css'
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <div className="sidebarWrapper">
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Dashboard</h3>
-          <ul className="sidebarList">
-            <Link to="/" className="link">
-              <li className="sidebarListItem active">
-                <LineStyle className="sidebarIcon" />
-                Home
-              </li>
-            </Link>
-            <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
+    <>
+      <nav class="sidebar">
+        <div>
+          <div class="sidebar__logo">
+            <img src="./Images/logo.png" alt="" />
+            <h2 class="sidebar__logo-header">Admin</h2>
+          </div>
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item-active">
+              <i class="fa-solid fa-house"></i>
+              <span>Tableau</span>
             </li>
-            <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" />
-              Sales
+            <li class="side-nav__item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Statistique</span>
             </li>
-          </ul>
-        </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Quick Menu</h3>
-          <ul className="sidebarList">
-            <Link to="/user" className="link">
-              <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
-                Users
-              </li>
-            </Link>
-            <Link to="/Product" className="link">
-              <Sidebar />
-              <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
-                Products
-              </li>
-            </Link>
-            <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
+            <li class="side-nav__item">
+              <i class="fa-solid fa-users"></i>
+              <span>Entreprises</span>
             </li>
-            <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
-              Reports
+            <li class="side-nav__item">
+              <i class="fa-solid fa-money-bill"></i>
+              <span>Depenses</span>
+            </li>
+            <li class="side-nav__item">
+              <i class="fa-brands fa-rocketchat"></i>
+              <span>Message</span>
+            </li>
+            <li class="side-nav__item">
+              <i class="fa-solid fa-person-military-to-person"></i>
+              <span>Partenaire</span>
+            </li>
+            <li class="side-nav__item">
+              <i class="fa-solid fa-gear"></i>
+              <span>Parametres</span>
             </li>
           </ul>
         </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Notifications</h3>
-          <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <MailOutline className="sidebarIcon" />
-              Mail
-            </li>
-            <li className="sidebarListItem">
-              <DynamicFeed className="sidebarIcon" />
-              Feedback
-            </li>
-            <li className="sidebarListItem">
-              <ChatBubbleOutline className="sidebarIcon" />
-              Messages
-            </li>
-          </ul>
-        </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Staff</h3>
-          <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <WorkOutline className="sidebarIcon" />
-              Manage
-            </li>
-            <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
-            </li>
-            <li className="sidebarListItem">
-              <Report className="sidebarIcon" />
-              Reports
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
+        <ul class="side-nav">
+          <li class="side-nav__item last-item">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Deconnexion</span>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
 

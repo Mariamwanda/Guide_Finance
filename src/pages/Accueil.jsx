@@ -1,5 +1,6 @@
-import "./script.js";
-import Navbar from "./Navbar.jsx";
+
+import Navbar from "../pages/Navbar.jsx";
+import '../App.css'
 
 import Footer from "../Components/footer";
 
