@@ -9,8 +9,8 @@ import Connexion from "./pages/connexion";
 import Dashboard from "./pages/Dashbord";
 import Sidebar from "./Components/Sidebar.jsx";
 import Topbar from "./Components/Topbar";
-
-
+import Depenses from "./pages/depenses";
+import Utilisateur from "./pages/Utilisateur.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -25,7 +25,8 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/Sidebar" element={<Sidebar/>} />
           <Route path="/Topbar" element={<Topbar/>} />
-
+          <Route path="/Depenses" element={<Depenses/>} />
+          <Route path="/Utilisateur" element={<Utilisateur/>} />
          
         </Routes>
       </BrowserRouter>

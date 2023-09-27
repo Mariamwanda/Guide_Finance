@@ -9,7 +9,7 @@ function Topbar() {
           <input
             type="text"
             class="search__input"
-            placeholder="Search something here"
+            placeholder="recherche..."
           />
         </div>
         <div class="user-nav">

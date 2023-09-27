@@ -1,0 +1,13 @@
+.sub3{
+    margin:30px 0;
+}
+
+Link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.table th{
+    font-size: 1.4rem;
+    color: #005c96;
+}
