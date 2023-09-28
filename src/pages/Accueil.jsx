@@ -1,7 +1,7 @@
 import Navbar from "../pages/Navbar.jsx";
 import "../App.css";
-
 import Footer from "../Components/footer";
+
 import apropos from "../Images/apropos.webp";
 import finance2 from "../Images/finance2.jpeg";
 import fiance from "../Images/fiance.jpeg";
@@ -9,7 +9,7 @@ import finances1 from "../Images/finances1.webp";
 import img2 from "../Images/img2.jpeg";
 import img1 from "../Images/img1.jpeg";
 import unif from "../Images/unif.png";
-import atlaOK from "../Images/atlaOK.png";
+import atlanta from "../Images/atlanta.png";
 import utilisateur1 from "../Images/utilisateur1.jpeg";
 import utilisateur3 from "../Images/utilisateur3.jpeg";
 import utilisateur2 from "../Images/utilisateur2.jpeg";
@@ -141,7 +141,7 @@ function Accueil() {
             <p>UNICEF</p>
           </div>
           <div>
-            <img src={atlaOK} alt="" />
+            <img src={atlanta} alt="" />
             <p>ATLANTA</p>
           </div>
           <div>

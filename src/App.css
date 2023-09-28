@@ -20,12 +20,13 @@ ul {
 
 .flotant {
   position: relative;
-  top: 72vh;
-  width: 55%;
-  height: 30vh;
+  top: 40vh;
+  left: 10vw;
+  width: 50vw;
+  height: 34vh;
   margin: auto;
-  background-color: red;
-  overflow: hidden;
+  padding: 30px;
+  background-color: #005c9677;
 }
 
 .flotant h1 {
@@ -230,5 +231,4 @@ p {
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
   }
-
 }
