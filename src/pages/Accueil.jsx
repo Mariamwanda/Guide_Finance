@@ -2,6 +2,7 @@ import Navbar from "../pages/Navbar.jsx";
 import "../App.css";
 
 import Footer from "../Components/footer";
+import apropos from "../Images/apropos.webp"
 
 function Accueil() {
   return (
@@ -32,7 +33,7 @@ function Accueil() {
         </div>
         <section className="py-5 apropos">
           <div className="img-fluid">
-            <img src="./src/Images/apropos.webp" alt="" />
+            <img src={apropos} alt="" />
           </div>
           <div className="text-fluid">
             <h1>Tout sur Nous</h1>
