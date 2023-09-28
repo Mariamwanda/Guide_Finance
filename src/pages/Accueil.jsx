@@ -1,6 +1,5 @@
-
 import Navbar from "../pages/Navbar.jsx";
-import '../App.css'
+import "../App.css";
 
 import Footer from "../Components/footer";
 
@@ -33,7 +32,7 @@ function Accueil() {
         </div>
         <section className="py-5 apropos">
           <div className="img-fluid">
-            <img src="./../../src/Images/apropos.webp" alt="" />
+            <img src="./src/Images/apropos.webp" alt="" />
           </div>
           <div className="text-fluid">
             <h1>Tout sur Nous</h1>
@@ -60,7 +59,7 @@ function Accueil() {
         <div className="blocks">
           <div className="block">
             <div className="grid-col">
-              <img src="./../../src/Images/finance2.jpeg" alt="" />
+              <img src="./src/Images/finance2.jpeg" alt="" />
               <h1>
                 <span>Soutient</span>
                 <br />
@@ -74,7 +73,7 @@ function Accueil() {
           </div>
           <div className="block">
             <div className="grid-col">
-              <img src="./../../src/Images/fiance.jpeg" alt="" />
+              <img src="./src/Images/fiance.jpeg" alt="" />
               <h1>
                 <span>Accompagnement</span> <br />
               </h1>
@@ -87,7 +86,7 @@ function Accueil() {
           </div>
           <div className="block">
             <div className="grid-col">
-              <img src="./../../src/Images/finances1.webp" alt="" />
+              <img src="./src/Images/finances1.webp" alt="" />
               <h1>Motivation</h1>
               <p>
                 {" "}
@@ -98,7 +97,7 @@ function Accueil() {
           </div>
           <div className="block">
             <div className="grid-col">
-              <img src="./../../src/Images/img2.jpeg" alt="" />
+              <img src="./src/Images/img2.jpeg" alt="" />
               <h1>Financement</h1>
               <p>
                 {" "}
@@ -109,7 +108,7 @@ function Accueil() {
           </div>
           <div className="block">
             <div className="grid-col">
-              <img src="./../../src/Images/img1.jpeg" alt="" />
+              <img src="./src/Images/img1.jpeg" alt="" />
               <h1>Conseil</h1>
               <p>
                 {" "}
@@ -127,19 +126,19 @@ function Accueil() {
         </div>
         <div className="imgPart">
           <div>
-            <img src="/src/Images/unif.png" alt="" />
+            <img src="./src/Images/unif.png" alt="" />
             <p>UNICEF</p>
           </div>
           <div>
-            <img src="/src/Images/atlaOK.png" alt="" />
+            <img src="./src/Images/atlaOK.png" alt="" />
             <p>ATLANTA</p>
           </div>
           <div>
-            <img src="/src/Images/unif.png" alt="" />
+            <img src="./src/Images/unif.png" alt="" />
             <p>dddede</p>
           </div>
           <div>
-            <img src="./../../src/Images/unif.png" alt="" />
+            <img src="./src/Images/unif.png" alt="" />
             <p>dddede</p>
           </div>
         </div>
@@ -178,7 +177,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur3.jpeg" alt="" />
                     <span>Mr.Belem</span>
                     <br />
                   </h1>
@@ -207,7 +206,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur2.jpeg" alt="" />
                     <span>Mme.Noelle</span>
                     <br />
                   </h1>
@@ -236,7 +235,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur1.jpeg" alt="" />
                     <span>Mr.Konan</span>
                     <br />
                   </h1>
@@ -270,7 +269,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur3.jpeg" alt="" />
                     <span>Mr.Belem</span>
                     <br />
                   </h1>
@@ -299,7 +298,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur2.jpeg" alt="" />
                     <span>Mme.Noelle</span>
                     <br />
                   </h1>
@@ -328,7 +327,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur1.jpeg" alt="" />
                     <span>Mr.Konan</span>
                     <br />
                   </h1>
@@ -362,7 +361,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur3.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur3.jpeg" alt="" />
                     <span>Mr.Belem</span>
                     <br />
                   </h1>
@@ -391,7 +390,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur2.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur2.jpeg" alt="" />
                     <span>Mme.Noelle</span>
                     <br />
                   </h1>
@@ -420,7 +419,7 @@ function Accueil() {
               <div className="card">
                 <div className="grid-col">
                   <h1>
-                    <img src="./../../src/Images/utilisateur1.jpeg" alt="" />
+                    <img src="./src/Images/utilisateur1.jpeg" alt="" />
                     <span>Mr.Konan</span>
                     <br />
                   </h1>

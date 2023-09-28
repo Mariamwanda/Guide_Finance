@@ -38,7 +38,7 @@ function Connexion() {
           <div className="logo">
             <img src="./src/Images/logo.png" alt="" />
           </div>
-          <div className="text-center mt-4 name">Enregistrement</div>
+          <div className="text-center mt-4 name">Connexion</div>
 
           <div className="form-field d-flex align-items-center">
             <span
@@ -72,15 +72,7 @@ function Connexion() {
               placeholder="mot passe"
             />
           </div>
-          <button className="btn mt-3" onClick={submit}>
-            Inscris
-          </button>
-          <div className="text-center fs-6">
-            <Link to="/connexion">j'ai pas de compte?</Link>
-            <a href="#">
-              <span>Connexion</span>
-            </a>
-          </div>
+          <button className="btn mt-3">Inscris</button>
         </div>
       </div>
     </div>
