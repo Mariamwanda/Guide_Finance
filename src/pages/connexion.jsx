@@ -1,44 +1,19 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import logo from "../Images/logo.png";
+import "./connexion.css";
+import { colors } from "@material-ui/core";
+import { apiUrl } from "../../Api/config/env";
 
 function Connexion() {
-  const [email, setEmail] = useState("");
-  const [motPasse, setmotPasse] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleLogin = async () => {
-    try {
-      const response = await fetch("", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (response.ok) {
-        // La connexion a réussi, vous pouvez gérer la suite ici
-        setMessage("Connexion réussie");
-      } else {
-        // La connexion a échoué
-        setMessage(
-          "La connexion a échoué. Veuillez vérifier vos informations."
-        );
-      }
-    } catch (error) {
-      console.error("Erreur de connexion :", error);
-      setMessage("Une erreur s'est produite lors de la connexion.");
-    }
-  };
-
   return (
     <div className="container content">
-      <div className="contentFirst">
-        <div className="wrapper">
+      <div className="Contour">
+        <div className="interieur">
           <div className="logo">
-            <img src="./src/Images/logo.png" alt="" />
+            <img src={logo} alt="" />
           </div>
-          <div className="text-center mt-4 name">Connexion</div>
+          <h1>Connexion</h1>
 
           <div className="form-field d-flex align-items-center">
             <span
@@ -72,7 +47,13 @@ function Connexion() {
               placeholder="mot passe"
             />
           </div>
-          <button className="btn mt-3">Inscris</button>
+          <p className="text-center" style={{ fontSize: "25px" }}>
+            j'ai pas de compte?
+            <Link to="/enregistrement" style={{ textDecoration: "none" }}>
+              <span> inscris</span>
+            </Link>
+          </p>
+          <button className="btn mt-3">Connexion</button>
         </div>
       </div>
     </div>

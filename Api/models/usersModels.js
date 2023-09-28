@@ -24,9 +24,7 @@ const userSchema = new Schema({
     select :{
       type : [String],
       require : true,
-    }
-    
-    
+    } 
 },
 {
     timestamps : true,

@@ -1,0 +1,54 @@
+.interieur {
+  max-width: 750px;
+  min-height: 600px;
+  margin: 80px auto;
+  padding: 40px 30px 30px 30px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid grey;
+}
+
+.Contour {
+  width: 100%;
+  height: 35vh;
+  padding: 20px;
+  background-color: #005c96;
+}
+.interieur .form-field input {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+
+  background: none;
+  font-size: 1.2rem;
+  padding: 10px 15px 10px 10px;
+}
+.Contour form {
+  width: 70%;
+  height: 45vh;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.494);
+  margin-left: 7vw;
+  margin-top: 10vh;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.interieur h1 {
+  color: #096a09;
+  margin: 20px;
+  text-align: center;
+}
+
+.Contour .btn {
+  box-shadow: none;
+  width: 50%;
+  height: 50px;
+  border: 2px solid #005c96;
+  color: #096a09;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+  letter-spacing: 1.3px;
+  font-size: 1.3rem;
+  margin-left: 7vw;
+}

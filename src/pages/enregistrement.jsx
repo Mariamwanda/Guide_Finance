@@ -2,8 +2,8 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import logo from "../Images/logo.png";
 import { apiUrl } from "../../Api/config/env";
-
 
 function Enregistrement() {
   const [data, setData] = useState({
@@ -30,12 +30,13 @@ function Enregistrement() {
       entreprise: entreprise,
       date: date,
       select: select,
-    };console.log(formData);
+    };
+    console.log(formData);
     axios
       .post(`${apiUrl}/api/usersModels`, formData)
       .then((response) => {
         console.log("Réponse de l'API :", response.data);
-console.log(formData);
+        console.log(formData);
         setData({
           nom: "",
           email: "",
@@ -50,14 +51,13 @@ console.log(formData);
       });
   }
 
-  
   return (
     <>
       <div className="container content">
         <div className="contentFirst">
           <div className="wrapper">
             <div className="logo">
-              <img src="./src/Images/logo.png" alt="" />
+              <img src={logo} alt="" />
             </div>
             <div className="text-center mt-4 name">Enregistrement</div>
             <div className="form-field d-flex align-items-center">
@@ -157,12 +157,6 @@ console.log(formData);
             <button className="btn mt-3" onClick={submit}>
               Inscris
             </button>
-            <div className="text-center fs-6">
-              <Link to="/connexion">j'ai pas de compte?</Link>
-              <a href="#">
-                <span>Connexion</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
