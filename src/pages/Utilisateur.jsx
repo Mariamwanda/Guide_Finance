@@ -1,198 +1,137 @@
-import Sidebar from "../Components/Sidebar";
-import Topbar from "../Components/Topbar";
-import React from "react";
-import  ReactDOM  from "react-dom";
-import { useState } from "react";
-class Utilisateur extends React.Component {
-  
-    // static propTypes = {
-    //   getData: PropTypes.func
-    // };
-  
-    constructor(props){
-      super(props);
-      this.state = {
-        name: "",
-        email: "",
-        city: ""
-      };
-    }
-      
-    handelSubmit(e){
-      e.preventDefault();
-      console.log(this.state.email);
-      
-      this.props.getData({
-        name: this.state.name,
-        email: this.state.email,
-        city: this.state.city
-      });
-    }
-    
-    shouldComponentUpdate(nextProps, nextState){
-      // if(nextProps.name )
-      
-      return true;
-    }
-    
-    render () {
-      return (
-        <form onSubmit={(e)=> this.handelSubmit(e)}>
-          <div className="form-group">
-            <label>Name</label>
-            <input type="text" ref="name" className="form-control" id="exampleInputPassword1" placeholder="Name" defaultValue={this.state.name} />
-          </div>
-          <div className="form-group">
-            <label>Email address</label>
-            <input type="email" ref="email" className="form-control" id="exampleInputEmail1" placeholder="Enter email" defaultValue={this.state.email} />
-          </div>
-          <div className="form-check">
-            <label >City</label>
-            <input type="text" ref="city" className="form-control" id="exampleCheck1"  defaultValue={this.state.city}/>
-          </div>
-          <br />
-          <button type="submit" className="btn btn-primary" >Submit</button>
-        </form>
-       
-      );
-     
-    }
-    
-  }
-  
-  class Studentlist extends React.Component {
-    constructor(props){
-      super(props);
-      this.state = {};
-    }
-    
-    render(){
-      let data = this.props.data ? this.props.data : [];
-      console.log("data: ", data);
-      return (
-        <div className="container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">City</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                data.length == 0 ?
-                    (<tr>
-                          <td colSpan="4" style={{textAlign: "center", fontWeight: "bold"}}>No Data</td>
-                      </tr>)
-                  :
-                data.map((d, i) => {
-                  return (<tr key={i+1}>
-                          <td>{i}</td>
-                          <td>{d.name}</td>
-                          <td>{d.email}</td>
-                          <td>{d.city}</td>
-                      </tr>);
-                })
-              }
-            </tbody>
-          </table>
-        </div>
-       )
-    }
-  }
-  
-  class App extends React.Component {
-    constructor(props){
-      super(props);
-      this.state = {
-        list: []
-      };
-    }
-    masterData(data){
-      console.log("masterData: ", data);
-      let list = this.state.list;
-      list.push(data)
-      this.setState({"list": list});
-    }
-    render (){
-      // console.log();
-      return (<div>
-          <Utilisateur getData={(data)=> this.masterData(data)}/>
-          <Studentlist data={this.state.list}/>
-        </div>);
-    }
-       
+import React, { useRef, useState } from "react";
 
-  }
-  
-  ReactDOM.render(<App />, document.getElementById('app'));
-  
-   /* constructor(props) {
-      super(props);
-      this.state = {
-        name: "",
-        email: "",
-        city: ""
-      };
-    }
-  
-    handleInputChange(event) {
-      const { name, value } = event.target;
-      this.setState({ [name]: value });
-    }
-  
-    handleSubmit(event) {
-      event.preventDefault();
-      console.log(this.state.name);
-      // Envoyez ces données où vous en avez besoin.
-      
-    }
-  
-    render() {
-      return (
-        <form onSubmit={(e) => this.handleSubmit(e)}>
-          <div className="form-group">
-            <label>Name</label>
-            <input
-              type="text"
-              name="name"
-              className="form-control"
-              placeholder="Name"
-              value={this.state.name}
-              onChange={(e) => this.handleInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <label>Email address</label>
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              placeholder="Enter email"
-              value={this.state.email}
-              onChange={(e) => this.handleInputChange(e)}
-            />
-          </div>
-          <div className="form-check">
-            <label>City</label>
-            <input
-              type="text"
-              name="city"
-              className="form-control"
-              defaultValue={this.state.city}
-              onChange={(e) => this.handleInputChange(e)}
-            />
-          </div>
-          <br />
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </form>
-      );
-    }*/
-  
+function Utilisateur() {
+ 
+    const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const cityRef = useRef(null);
 
-  export default Utilisateur;
+  const [formData, setFormData] = useState([]);
+  const [currentData, setCurrentData] = useState({
+    name: "",
+    email: "",
+    city: "",
+  });
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedIndex, setEditedIndex] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setCurrentData({ ...currentData, [name]: value });
+  };
+
+  const handleAddData = () => {
+    if (isEditing) {
+      const updatedData = [...formData];
+      updatedData[editedIndex] = currentData;
+      setFormData(updatedData);
+
+      setIsEditing(false);
+      setEditedIndex(null);
+    } else {
+      // Sinon, ajoutez de nouvelles données
+      setFormData([...formData, currentData]);
+    }
+
+    setCurrentData({ name: "", email: "", city: "" });
+
+    // Effacez les champs de saisie après avoir ajouté les données
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    cityRef.current.value = "";
+  };
+
+  const handleEditData = (index) => {
+ 
+    setIsEditing(true);
+    setEditedIndex(index);
+
+    setCurrentData(formData[index]);
+
+    
+    window.scrollTo(0, 0);
+  };
+
+  const handleDeleteData = (index) => {
+   
+    const updatedData = [...formData];
+    updatedData.splice(index, 1);
+    setFormData(updatedData);
+  };
+
+  return(
+    <>
+    <div>
+      <h1>Ajout d'Entreprise</h1>
+      <div>
+        <label htmlFor="name">Nom & prenom</label>
+        <input
+          type="text"
+          name="name"
+          ref={nameRef}
+          onChange={handleInputChange}
+          value={currentData.name}
+          id="name"
+        />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          ref={emailRef}
+          onChange={handleInputChange}
+          value={currentData.email}
+          id="email"
+        />
+      </div>
+      <div>
+        <label htmlFor="city">Ville:</label>
+        <input
+          type="text"
+          name="city"
+          ref={cityRef}
+          onChange={handleInputChange}
+          value={currentData.city}
+          id="city"
+        />
+      </div>
+      <button onClick={handleAddData}>
+        {isEditing ? "Enregistrer" : "Enregistrer"}
+      </button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Ville</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {formData.map((data, index) => (
+            <tr key={index}>
+              <td>{data.name}</td>
+              <td>{data.email}</td>
+              <td>{data.city}</td>
+              <td>
+                <button onClick={() => handleEditData(index)}>Modifier</button>
+                <button onClick={() => handleDeleteData(index)}>
+                  Supprimer
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   
+    
+    
+    
+    </>
+  )
+}
+
+export default Utilisateur;

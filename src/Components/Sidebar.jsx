@@ -1,5 +1,5 @@
-import './sidebar.css'
-import { Link } from 'react-router-dom';
+import "./sidebar.css";
+import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <>
@@ -18,29 +18,31 @@ function Sidebar() {
               <i class="fa-solid fa-chart-simple"></i>
               <span>Statistique</span>
             </li>
-            <li class="side-nav__item">
-              <i class="fa-solid fa-users"></i>
-              <span>Entreprises</span>
-            </li>
-            <Link to="/depenses">
+            <Link to="/Entreprise" style={{ textDecoration: "none" }}>
               <li class="side-nav__item">
-                  <i class="fa-solid fa-money-bill"></i>
-                  <span>Depenses</span>
+                <i class="fa-solid fa-users"></i>
+                <span>Entreprises</span>
               </li>
             </Link>
-            <Link to="/depenses">
-            <li class="side-nav__item">
-              <i class="fa-brands fa-rocketchat"></i>
-              <span>Message</span>
-            </li>
+            <Link to="/depenses" style={{ textDecoration: "none" }}>
+              <li class="side-nav__item">
+                <i class="fa-solid fa-money-bill"></i>
+                <span>Depenses</span>
+              </li>
             </Link>
-            <Link to="">
+            <Link to="/depenses" style={{ textDecoration: "none" }}>
+              <li class="side-nav__item">
+                <i class="fa-brands fa-rocketchat"></i>
+                <span>Message</span>
+              </li>
+            </Link>
+            <Link to="" style={{ textDecoration: "none" }}>
               <li class="side-nav__item">
                 <i class="fa-solid fa-person-military-to-person"></i>
                 <span>Partenaire</span>
               </li>
             </Link>
-            <Link>
+            <Link style={{ textDecoration: "none" }}>
               <li class="side-nav__item">
                 <i class="fa-solid fa-gear"></i>
                 <span>Parametres</span>
@@ -50,11 +52,11 @@ function Sidebar() {
         </div>
 
         <ul class="side-nav">
-          <Link to="/connexion">
-          <li class="side-nav__item last-item">
-            <i class="fa-solid fa-right-to-bracket"></i>
-            <span>Deconnexion</span>
-          </li>
+          <Link to="/connexion" style={{ textDecoration: "none" }}>
+            <li class="side-nav__item last-item">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <span>Deconnexion</span>
+            </li>
           </Link>
         </ul>
       </nav>

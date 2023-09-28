@@ -9,7 +9,7 @@ import Connexion from "./pages/connexion";
 import Dashboard from "./pages/Dashbord";
 import Sidebar from "./Components/Sidebar.jsx";
 import Topbar from "./Components/Topbar";
-import Depenses from "./pages/depenses";
+import Entreprise from "./pages/Entreprise";
 import Utilisateur from "./pages/Utilisateur.jsx";
 import { BrowserRouter } from "react-router-dom";
 
@@ -23,11 +23,10 @@ function App() {
           <Route path="/Enregistrement" element={<Enregistrement />} />
           <Route path="/Connexion" element={<Connexion />} />
           <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Sidebar" element={<Sidebar/>} />
-          <Route path="/Topbar" element={<Topbar/>} />
-          <Route path="/Depenses" element={<Depenses/>} />
-          <Route path="/Utilisateur" element={<Utilisateur/>} />
-         
+          <Route path="/Sidebar" element={<Sidebar />} />
+          <Route path="/Topbar" element={<Topbar />} />
+          <Route path="/Entreprise" element={<Entreprise />} />
+          <Route path="/Utilisateur" element={<Utilisateur />} />
         </Routes>
       </BrowserRouter>
     </>
