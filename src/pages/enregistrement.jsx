@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { apiUrl } from "../../Api/config/env";
+
 
 function Enregistrement() {
   const [data, setData] = useState({
@@ -30,7 +32,7 @@ function Enregistrement() {
       select: select,
     };console.log(formData);
     axios
-      .post("http://localhost:3000/api/usersModels", formData)
+      .post(`${apiUrl}/api/usersModels`, formData)
       .then((response) => {
         console.log("Réponse de l'API :", response.data);
 console.log(formData);
