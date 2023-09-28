@@ -127,15 +127,15 @@ function Accueil() {
         </div>
         <div className="imgPart">
           <div>
-            <img src="./../../src/Images/unif.png" alt="" />
+            <img src="/src/Images/unif.png" alt="" />
             <p>UNICEF</p>
           </div>
           <div>
-            <img src="./../../src/Images/atlaOK.png" alt="" />
+            <img src="/src/Images/atlaOK.png" alt="" />
             <p>ATLANTA</p>
           </div>
           <div>
-            <img src="./../../src/Images/unif.png" alt="" />
+            <img src="/src/Images/unif.png" alt="" />
             <p>dddede</p>
           </div>
           <div>

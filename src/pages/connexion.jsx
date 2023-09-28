@@ -1,71 +1,89 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 function Connexion() {
   const [email, setEmail] = useState("");
-  const [motPasse, setMotPasse] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
+  const [motPasse, setmotPasse] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleLogin = (e) => {
-    e.preventDefault();
+  const handleLogin = async () => {
+    try {
+      const response = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        // La connexion a réussi, vous pouvez gérer la suite ici
+        setMessage("Connexion réussie");
+      } else {
+        // La connexion a échoué
+        setMessage(
+          "La connexion a échoué. Veuillez vérifier vos informations."
+        );
+      }
+    } catch (error) {
+      console.error("Erreur de connexion :", error);
+      setMessage("Une erreur s'est produite lors de la connexion.");
+    }
   };
 
-  useEffect(() => {
-    fetch("http://localhost:3000/api/data")
-      .then((response) => response.json())
-      .then((data) => {
-        setEmail(data.email);
-        setMotPasse(data.motPasse);
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.error("Erreur :", error);
-        setIsLoading(false);
-      });
-  }, []);
-
   return (
-    <>
-      <div className="container Connexion">
-        <div className="contentFirst">
-          <div className="cadre">
-            <div className="logo">
-              <img src="./src/Images/logo.png" alt="" />
-            </div>
-            <div className="text-center mt-4 name">Connexion</div>
+    <div className="container content">
+      <div className="contentFirst">
+        <div className="wrapper">
+          <div className="logo">
+            <img src="./src/Images/logo.png" alt="" />
+          </div>
+          <div className="text-center mt-4 name">Enregistrement</div>
 
-            <div className="form-field d-flex align-items-center">
-              <span
-                className="fa-regular fa-envelope"
-                style={{ fontSize: "1.6rem", color: "#096a09" }}
-              ></span>
-              <input type="email" name="email" id="email" placeholder="email" />
-            </div>
-            <div className="form-field d-flex align-items-center">
-              <span
-                className="fa-solid fa-key"
-                style={{ fontSize: "1.5rem", color: "#096a09" }}
-              ></span>
+          <div className="form-field d-flex align-items-center">
+            <span
+              className="fa-solid fa-layer-group"
+              style={{ fontSize: "1.2rem", color: "#096a09" }}
+            ></span>
 
-              <input
-                type="password"
-                name="password"
-                id="pwd"
-                placeholder="Password"
-              />
-            </div>
-            <button className="btn mt-3">Connexion</button>
+            <input
+              type="email"
+              name="email"
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              value={email}
+              placeholder="EmailEntreprise"
+            />
+          </div>
+          <div className="form-field d-flex align-items-center">
+            <span
+              className="fa-solid fa-key"
+              style={{ fontSize: "1.2rem", color: "#096a09" }}
+            ></span>
 
-            <div className="text-center fs-6">
-              <a href="#">Mot de passe oublié?</a>
-              <Link to="" className="link">
-                <span> Inscription</span>
-              </Link>
-            </div>
+            <input
+              type="password"
+              name="motPasse"
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              value={motPasse}
+              placeholder="mot passe"
+            />
+          </div>
+          <button className="btn mt-3" onClick={submit}>
+            Inscris
+          </button>
+          <div className="text-center fs-6">
+            <Link to="/connexion">j'ai pas de compte?</Link>
+            <a href="#">
+              <span>Connexion</span>
+            </a>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
