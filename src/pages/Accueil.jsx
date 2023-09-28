@@ -130,7 +130,6 @@ function Accueil() {
           </div>
         </div>
       </div>
-
       <section className="container partenaire">
         <div className="container progessPater">
           <p>PARTENAIRES</p>
@@ -154,12 +153,13 @@ function Accueil() {
           </div>
         </div>
       </section>
+      <h2>Nos Avis..</h2>
+      <br />
       <div
         id="carouselExampleCaptions"
         className="container carousel slide"
         data-bs-ride="carousel"
       >
-        <h2>Nos Avis..</h2>
         <div className="carousel-indicators">
           <button
             type="button"
@@ -486,11 +486,11 @@ function Accueil() {
         </button>
       </div>
       <div className="contact container">
-        <section id="joindre">
+        <section id="joindre container-fluid">
           <h2 className="h1-responsive font-weight-bold text-center my-4">
             Contactez-Nous.
           </h2>
-          <div className="row">
+          <div className="row partie">
             <div className="col-md-9 mb-md-0 mb-5">
               <form
                 id="contact-form"

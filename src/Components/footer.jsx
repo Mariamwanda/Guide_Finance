@@ -5,50 +5,52 @@ function Footer() {
       <div className="footer-dark">
         <footer>
           <div className="container">
-            <div className="row">
-              <div className="col-sm-6 col-md-3 item">
-                <h3>Objectifs</h3>
-                <ul>
-                  <li>
-                    <a href="/#">Services</a>
-                  </li>
-                  <li>
-                    <a href="/#">Accompagnement</a>
-                  </li>
-                  <li>
-                    <a href="/#">Assurance</a>
-                  </li>
-                  <li>
-                    <a href="/#">Quarantie</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-sm-6 col-md-3 item">
-                <h3>Services</h3>
-                <ul>
-                  <li>
-                    <a href="/#">Accueil</a>
-                  </li>
-                  <li>
-                    <a href="/#">Apropos</a>
-                  </li>
-                  <li>
-                    <a href="">Contact</a>
-                  </li>
-                  <li>
-                    <a href="/#">Connexion</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-sm-6 col-md-3 item bulletin">
-                <h3>Bulletin</h3>
-                <h6 href="/#" style={{ fontSize: "20px" }}>
-                  Entrez votre mail?
-                </h6>{" "}
-                <br />
-                <div className="col d-flex">
-                  <input type="text" placeholder="ecrit..." />{" "}
-                  <button className="btn-outline">Envoyer</button>
+            <div>
+              <div className="row">
+                <div className="col-sm-6 col-md-3 item">
+                  <h3>Objectifs</h3>
+                  <ul>
+                    <li>
+                      <a href="/#">Services</a>
+                    </li>
+                    <li>
+                      <a href="/#">Accompagnement</a>
+                    </li>
+                    <li>
+                      <a href="/#">Assurance</a>
+                    </li>
+                    <li>
+                      <a href="/#">Quarantie</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                    <li>
+                      <a href="/#">Accueil</a>
+                    </li>
+                    <li>
+                      <a href="/#">Apropos</a>
+                    </li>
+                    <li>
+                      <a href="">Contact</a>
+                    </li>
+                    <li>
+                      <a href="/#">Connexion</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-md-3 item bulletin">
+                  <h3>Bulletin</h3>
+                  <h6 href="/#" style={{ fontSize: "20px" }}>
+                    Entrez votre mail?
+                  </h6>{" "}
+                  <br />
+                  <div className="col d-flex">
+                    <input type="text" placeholder="ecrit..." />{" "}
+                    <button className="btn-outline">Envoyer</button>
+                  </div>
                 </div>
               </div>
             </div>

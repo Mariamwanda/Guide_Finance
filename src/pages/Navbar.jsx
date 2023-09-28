@@ -38,7 +38,7 @@ function Navbar() {
                     Contact
                   </a>
                 </li>
-                <Link to="/enregistrement">
+                <Link to="/enregistrement" className="bouton">
                   <a className="nav-link" href="#">
                     <button>Connexion</button>
                   </a>

@@ -12,21 +12,28 @@ ul {
 }
 
 .banniere {
+  position: relative;
   background: url("./Images/bleu.jpeg");
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 
 .flotant {
-  position: relative;
-  top: 40vh;
+  position: absolute;
+  top: 60vh;
   left: 10vw;
   width: 50vw;
-  height: 34vh;
-  margin: auto;
+  height: 33vh;
   padding: 30px;
   background-color: #005c9677;
+}
+
+.bouton button {
+  background-color: #65ff65f0;
+  padding: 25px;
+  font-size: 25px;
+  border-top-right-radius: 40px;
 }
 
 .flotant h1 {
@@ -54,14 +61,14 @@ ul {
 }
 
 .bar-progess p {
-  text-align: center;
   font-size: 1.7rem;
+  margin-left: 25vw;
   color: rgba(0, 64, 128, 1);
 }
 
 h2 {
   text-align: center;
-  margin: 20px;
+  font-size: 3rem;
   color: #005c96;
 }
 
@@ -86,6 +93,7 @@ h2 {
 }
 .partenaire .progessPater {
   padding: 15px;
+  margin-bottom: 20px;
   background-color: rgba(9, 106, 9, 0.4);
 }
 
@@ -202,7 +210,9 @@ p {
   font-size: 24px;
   margin: 10px;
 }
-
+#joindre {
+  background-color: #1ee71e;
+}
 .block a {
   color: #323232;
 }
@@ -231,4 +241,11 @@ p {
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
   }
+
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+  }
+
+ 
 }

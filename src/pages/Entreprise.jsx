@@ -1,7 +1,7 @@
 import Topbar from "../Components/Topbar";
 import Sidebar from "../Components/Sidebar";
 import { Link } from "react-router-dom";
-import './depense.css'
+import './entreprise.css'
 
 function Depenses(){
     return(
