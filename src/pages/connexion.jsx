@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import logo from "../Images/logo.png";
 import "./connexion.css";
+import { useNavigate } from "react-router-dom";
 import { apiUrl } from "../../Api/config/env";
 
 function Connexion() {
+  const Navigate = useNavigate()
   const [data, setData] = useState({
     email: "",
     motPasse: "",
@@ -28,6 +30,10 @@ function Connexion() {
       .post(`${apiUrl}/api/usersLogin`, formData)
       .then((response) => {
         console.log("Réponse de l'API :", response.data);
+        const{status} = response.data;
+        if(status){
+         Navigate("/Dashboard")
+        }
         console.log(formData);
         setData({
           email: "",

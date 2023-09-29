@@ -1,12 +1,14 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import logo from "../Images/logo.png";
 import { apiUrl } from "../../Api/config/env";
 
 
 function Enregistrement() {
+  const Navigate = useNavigate()
   const [data, setData] = useState({
     nom: " ",
     email: "",
@@ -37,6 +39,10 @@ function Enregistrement() {
       .post(`${apiUrl}/api/usersModels`, formData)
       .then((response) => {
         console.log("Réponse de l'API :", response.data);
+        const{status} = response.data;
+        if(status){
+         Navigate("/connexion")
+        }
         console.log(formData);
         setData({
           nom: "",
@@ -132,13 +138,13 @@ function Enregistrement() {
               ></span>
 
               <input
-                type="datetime-local"
+                type="date"
                 name="date"
                 onChange={(e) => {
                   handleChange(e);
                 }}
                 value={date}
-                placeholder="date & time"
+                placeholder="date"
               />
             </div>
             <div className="form-group">

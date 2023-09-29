@@ -9,7 +9,7 @@ import Connexion from "./pages/connexion";
 import Dashboard from "./pages/Dashbord";
 import Sidebar from "./Components/Sidebar.jsx";
 import Topbar from "./Components/Topbar";
-import Utilisateur from "./pages/Utilisateur.jsx";
+import Utilisateur from "./Components/Utilisateur";
 import { BrowserRouter } from "react-router-dom";
 import Entreprise from "./pages/Entreprise.jsx"
 import Depense from "./pages/Depense";

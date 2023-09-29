@@ -19,7 +19,7 @@ const userSchema = new Schema({
         require : true,
     },
     date : {
-        type : Number,
+        type : Date,
     },
     select :{
       type : [String],

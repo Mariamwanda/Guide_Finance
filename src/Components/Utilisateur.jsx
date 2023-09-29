@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import Sidebar from "../Components/Sidebar";
-import Topbar from "../Components/Topbar";
-import "../components/utilisateur.css";
+import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
+import "./utilisateur.css";
 import { styled } from "@material-ui/core";
 
 function Utilisateur() {
