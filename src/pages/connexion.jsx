@@ -1,11 +1,44 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import axios from "axios";
 import logo from "../Images/logo.png";
 import "./connexion.css";
-import { colors } from "@material-ui/core";
 import { apiUrl } from "../../Api/config/env";
 
 function Connexion() {
+  const [data, setData] = useState({
+    email: "",
+    motPasse: "",
+  });
+  console.log(data);
+  function handleChange(e) {
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  }
+  const { email, motPasse} = data;
+  function submit() {
+    const formData = {
+      email: email,
+      motPasse: motPasse,
+    };
+    console.log(formData);
+    axios
+      .post(`${apiUrl}/api/usersLogin`, formData)
+      .then((response) => {
+        console.log("Réponse de l'API :", response.data);
+        console.log(formData);
+        setData({
+          email: "",
+          motPasse: "",
+        });
+      })
+      .catch((error) => {
+        console.error("erreur sur l'utilisateur:", error);
+      });
+  }
+
   return (
     <div className="container content">
       <div className="Contour">
@@ -53,7 +86,9 @@ function Connexion() {
               <span> inscris</span>
             </Link>
           </p>
-          <button className="btn mt-3">Connexion</button>
+          <button className="btn mt-3" onClick={submit}>
+            Connexion
+          </button>
         </div>
       </div>
     </div>

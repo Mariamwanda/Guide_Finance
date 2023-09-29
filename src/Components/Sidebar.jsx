@@ -24,25 +24,13 @@ function Sidebar() {
                 <span>Entreprises</span>
               </li>
             </Link>
-            <Link to="/depenses" style={{ textDecoration: "none" }}>
+            <Link to="/Depense" style={{ textDecoration: "none" }}>
               <li class="side-nav__item">
                 <i class="fa-solid fa-money-bill"></i>
                 <span>Depenses</span>
               </li>
             </Link>
-            <Link to="/depenses" style={{ textDecoration: "none" }}>
-              <li class="side-nav__item">
-                <i class="fa-brands fa-rocketchat"></i>
-                <span>Message</span>
-              </li>
-            </Link>
-            <Link to="" style={{ textDecoration: "none" }}>
-              <li class="side-nav__item">
-                <i class="fa-solid fa-person-military-to-person"></i>
-                <span>Partenaire</span>
-              </li>
-            </Link>
-            <Link style={{ textDecoration: "none" }}>
+            <Link to="/Dashboard" style={{ textDecoration: "none" }}>
               <li class="side-nav__item">
                 <i class="fa-solid fa-gear"></i>
                 <span>Parametres</span>

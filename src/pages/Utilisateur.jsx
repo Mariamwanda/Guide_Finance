@@ -1,20 +1,19 @@
 import React, { useRef, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
-import "./entreprise.css";
+import "../components/utilisateur.css";
+import { styled } from "@material-ui/core";
 
 function Utilisateur() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const kindRef = useRef(null);
-  const yearRef = useRef(null);
 
   const [formData, setFormData] = useState([]);
   const [currentData, setCurrentData] = useState({
     name: "",
     email: "",
     kind: "",
-    year: "",
   });
   const [isEditing, setIsEditing] = useState(false);
   const [editedIndex, setEditedIndex] = useState(null);
@@ -40,7 +39,6 @@ function Utilisateur() {
     nameRef.current.value = "";
     emailRef.current.value = "";
     kindRef.current.value = "";
-    yearRef.current.value = "";
   };
 
   const handleEditData = (index) => {
@@ -57,7 +55,6 @@ function Utilisateur() {
     updatedData.splice(index, 1);
     setFormData(updatedData);
   };
-
   return (
     <>
       <div class="container-fluid section">
@@ -119,7 +116,6 @@ function Utilisateur() {
                   <th>Nom</th>
                   <th>Email</th>
                   <th>Type</th>
-                  <th>Année</th>
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -129,7 +125,6 @@ function Utilisateur() {
                     <td>{data.name}</td>
                     <td>{data.email}</td>
                     <td>{data.kind}</td>
-                    <td>{data.year}</td>
                     <td>{data.city}</td>
                     <td>
                       <button onClick={() => handleEditData(index)}>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
 import { apiUrl } from "../../Api/config/env";
 
+
 function Enregistrement() {
   const [data, setData] = useState({
     nom: " ",
@@ -46,6 +47,7 @@ function Enregistrement() {
           select: "",
         });
       })
+
       .catch((error) => {
         console.error("Erreur lors de la soumission du formulaire :", error);
       });
